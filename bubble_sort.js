@@ -27,6 +27,7 @@ function bubbleSort(arr) {
     for(let i = 0; i < arr.length; i++) {
         let iIncrement = i+1;
         if(arr.length - 1 >= iIncrement) {
+            console.log(arr, arr[i], arr[iIncrement]);
             if (arr[i] > arr[iIncrement]) {
                 arr = swap(arr, i, iIncrement);
             }
